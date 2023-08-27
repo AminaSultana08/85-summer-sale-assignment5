@@ -47,6 +47,8 @@ const ol = document.getElementById('list-items')
 
   total = parseFloat(total) + parseFloat(itemPrice);
   document.getElementById('total-price').innerText = total;
+
+  
  
   const applyButton = document.getElementById('btn-apply');
    
@@ -74,9 +76,6 @@ else{
 if(total>=200 || couponCode === "SELL200") {
     alert('Congratulations,you will get 20% discount on your total price,enter the coupon code')
 }
-  else{
-    alert('Oops!You have entered  the wrong CouponCode')
-  }
 }
 document.getElementById('go-home').addEventListener('click',function () {
     window.location.href = "http://127.0.0.1:5503/index.html"
