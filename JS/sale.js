@@ -78,7 +78,7 @@ if(total>=200 || couponCode === "SELL200") {
 }
 }
 document.getElementById('go-home').addEventListener('click',function () {
-    window.location.href = "http://127.0.0.1:5503/index.html"
+    window.location.reload(); 
     totalPrice .innerText = " ";
     discount.innerText =" ";
     total.innerText = " ";
